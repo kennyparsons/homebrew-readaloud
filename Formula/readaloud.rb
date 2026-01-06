@@ -5,21 +5,21 @@
 class Readaloud < Formula
   desc "readaloud is a command-line tool for text-to-speech synthesis using Microsoft Edge's online service."
   homepage "https://github.com/kennyparsons/readaloud"
-  version "1.0.1"
+  version "1.2.0"
   license "ISC"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/kennyparsons/readaloud/releases/download/v1.0.1/readaloud_Darwin_x86_64.tar.gz"
-    sha256 "5c126f51af6ba40359ed08685bc6907014100426a258e968787bc9f9311ae145"
+    url "https://github.com/kennyparsons/readaloud/releases/download/v1.2.0/readaloud_Darwin_x86_64.tar.gz"
+    sha256 "46d43f6b421387e2fd96a2370983feef5390aed8fb6fbb879dcbacec1195ea40"
 
     def install
       bin.install "readaloud"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/kennyparsons/readaloud/releases/download/v1.0.1/readaloud_Darwin_arm64.tar.gz"
-    sha256 "944c2bf746194d2a57b592b355eb30d7bafc70b47a513e7b9b74658867793e61"
+    url "https://github.com/kennyparsons/readaloud/releases/download/v1.2.0/readaloud_Darwin_arm64.tar.gz"
+    sha256 "49255504e1124a27ba99f12e79577a1c775f403c9e0b5c17541cf317b6ded6b2"
 
     def install
       bin.install "readaloud"
